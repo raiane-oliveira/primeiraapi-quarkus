@@ -2,7 +2,6 @@ package acc.br;
 
 import acc.br.model.CriarNovaFrutaDTO;
 import acc.br.model.Fruta;
-import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -12,7 +11,6 @@ import java.util.List;
 
 @Path("/frutas")
 public class FrutasResource {
-  @Inject
   private static final Logger logger = Logger.getLogger(FrutasResource.class);
 
   @GET
